@@ -2,26 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: "Nexa-bold";
+  src: url("../pages/fonts/Nexa-ExtraLight.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.font-nexa {
+  font-family: "Nexa-bold", sans-serif;
+  font-weight: bold;
+}
+
+.logo {
+  color: linear-gradient(89.56deg, #fc8c02 -42.7%, #5618ff 117.16%);
+}
+
+.radical-1 {
+  position: absolute;
+  width: 340.8px;
+  height: 340.8px;
+  left: 1114.08px;
+  top: 1.72px;
+
+  /* Linear */
+
+  background: linear-gradient(180deg, #fc8c02 0%, #5618ff 100%);
+  filter: blur(94.0061px);
+  backdrop-filter: blur(25px);
+
+}
+
+.radical-2 {
+  position: absolute;
+  width: 340.8px;
+  height: 340.8px;
+  left: -25.85px;
+  top: 676.8px;
+  overflow: hidden;
+  /* Linear */
+
+  background: linear-gradient(180deg, #fc8c02 0%, #5618ff 100%);
+  filter: blur(94.0061px);
+  backdrop-filter: blur(25px);
+}
+
+.border-gradient{
+  border:  linear-gradient(180deg, #fc8c02 0%, #5618ff 100%);
+  
 }
