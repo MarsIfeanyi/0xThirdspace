@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Roboto:wght@400;500;700;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,77 +8,139 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-@font-face {
-  font-family: "Nexa-bold";
-  src: url("../pages/fonts/Nexa-ExtraLight.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-.font-nexa {
-  font-family: "Nexa-bold", sans-serif;
-  font-weight: bold;
-}
-
-.logo {
-  color: linear-gradient(89.56deg, #fc8c02 -42.7%, #5618ff 117.16%);
-}
-
-.radical-1 {
-  position: absolute;
-  width: 340.8px;
-  height: 340.8px;
-  left: 1114.08px;
-  top: 1.72px;
-
-  /* Linear */
-
-  background: linear-gradient(180deg, #fc8c02 0%, #5618ff 100%);
-  filter: blur(94.0061px);
-  backdrop-filter: blur(25px);
-
-}
-
-.radical-2 {
-  position: absolute;
-  width: 340.8px;
-  height: 340.8px;
-  left: -25.85px;
-  top: 676.8px;
-  overflow: hidden;
-  /* Linear */
-
-  background: linear-gradient(180deg, #fc8c02 0%, #5618ff 100%);
-  filter: blur(94.0061px);
-  backdrop-filter: blur(25px);
-}
-
-.border-gradient{
-  border:  linear-gradient(180deg, #fc8c02 0%, #5618ff 100%);
-  
-}
-
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
-
-:root {
-  --color-bg: #fff;
-  --color-border: #e5e7eb;
-  --color-sidebar-item: #f3f4f6;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
 }
 
 body {
-  background-color: #eee;
-  font-family: "Roboto", sans-serif;
+  background-image: url("../assets/backgorundImage.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.header__text span {
+  color: linear-gradient(89.56deg, #fc8c02 -42.7%, #5618ff 117.16%);
+}
+
+.logoGradient {
+  background: linear-gradient(89.56deg, #fc8c02 -42.7%, #5618ff 117.16%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.btnBackgroundGradient {
+  background: linear-gradient(89.56deg, #fc8c02 -42.7%, #5618ff 117.16%);
+}
+
+.buttonGradient {
+  background: linear-gradient(180deg, #fc8c02 0%, #5618ff 100%);
+}
+
+/* Form */
+
+input {
+  width: 100%;
+  /* padding: 0.65rem 0.5rem; */
+}
+
+/* form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+} */
+
+/* .viewBounty {
+  width: 489px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.mainCont {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+  width: 489px;
+}
+
+.leftCont {
+  width: 210px;
+  height: 5px;
+  background-color: #1f1f1f;
+}
+
+.rightCont {
+  width: 210px;
+  height: 5px;
+  background-color: #1f1f1f;
+}
+
+.createBounty {
+  border-image: linear-gradient(89.56deg, #fc8c02 -42.7%, #5618ff 117.16%) 30;
+  border-width: 4px;
+  border-style: solid;
+}
+
+.borderG {
+  width: 489px;
+  height: 56px;
+  border-top: 2px solid #fc8c02;
+  border-bottom: 2px solid #5618ff;
+  background-image: linear-gradient(89.56deg, #fc8c02 -42.7%, #5618ff 117.16%),
+    linear-gradient(89.56deg, #fc8c02 -42.7%, #5618ff 117.16%);
+  background-size: 2px 100%;
+  background-position: 0 0, 100% 0;
+  background-repeat: no-repeat;
+}
+
+.btnBorderGradient {
+  display: flex;
+  width: 489px;
+  height: 56px;
+  /* The background is used to specify the border background */
+  background: -moz-linear-gradient(60.56deg, #fc8c02 -42.7%, #5618ff 117.16%);
+  background: -webkit-linear-gradient(
+    60.56deg,
+    #fc8c02 -42.7%,
+    #5618ff 117.16%
+  );
+  /* Background origin is the padding box by default.
+  Override to make the background cover the border as well. */
+  -moz-background-origin: border;
+  background-origin: border-box;
+  /* A transparent border determines the width */
+  border: 1px solid transparent;
+  border-radius: 8px;
+  box-shadow: inset 0 0 1px black, /* Inset shadow */ 0 0 12px black,
+    /* Outset shadow */ inset -999px 0 0 black; /* The background color */
+}
+
+.btnBorderGradient2 {
+  display: flex;
+  width: 170px;
+  height: 65px;
+  /* The background is used to specify the border background */
+  background: -moz-linear-gradient(60.56deg, #fc8c02 -42.7%, #5618ff 117.16%);
+  background: -webkit-linear-gradient(
+    60.56deg,
+    #fc8c02 -42.7%,
+    #5618ff 117.16%
+  );
+  /* Background origin is the padding box by default.
+  Override to make the background cover the border as well. */
+  -moz-background-origin: border;
+  background-origin: border-box;
+  /* A transparent border determines the width */
+  border: 1px solid transparent;
+  border-radius: 50px;
+  box-shadow: inset 0 0 1px black, /* Inset shadow */ 0 0 12px black,
+    /* Outset shadow */ inset -999px 0 0 black; /* The background color */
 }
 
 .layout {

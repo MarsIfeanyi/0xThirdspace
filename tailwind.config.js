@@ -17,6 +17,12 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
           "lg-2": "linear-gradient(89.56deg, #FC8C02 -42.7%, #5618FF 117.16%)",
+        bRadius: "linear-gradient(89.56deg, #FC8C02 -42.7%, #5618FF 117.16%)",
+      },
+
+      fontFamily: {
+        roboto: ["Roboto", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
     },
   },

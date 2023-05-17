@@ -1,13 +1,15 @@
-import Image from 'next/image'
-import { Inter, Lancelot } from 'next/font/google'
-import LandingPage from "../components/LandingPage"
+import Home from "@/components/home";
 
-const inter = Inter({ subsets: ['latin'] })
+type Props = {};
 
-export default function Home() {
+const HomePage = (props: Props) => {
   return (
-    <div >
-      <LandingPage/>
-    </div>
-  )
-}
+    <>
+      <div>
+        <Home />
+      </div>
+    </>
+  );
+};
+
+export default HomePage;
