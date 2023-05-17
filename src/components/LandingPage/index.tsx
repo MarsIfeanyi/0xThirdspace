@@ -53,7 +53,7 @@ const index = () => {
   );
 };
 
-const Logo = () => {
+export const Logo = () => {
   return (
     <div className="flex justify-between items-center p-8">
       <Link href="/">

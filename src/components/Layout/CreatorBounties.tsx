@@ -4,9 +4,9 @@ type CreatorBountiesProps = { children: ReactNode };
 import CreatorSidebar from "../Sidebar/Creator";
 const CreatorBounties = ({ children }: CreatorBountiesProps) => {
   return (
-    <div className="layout"> 
+    <div className="flex"> 
       <CreatorSidebar />
-      <main className="layout__main-content">{children}</main>
+      <main className="bg-black w-full h-full min-h-screen text-white">{children}</main>
     </div>
   );
 };
