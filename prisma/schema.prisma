@@ -12,12 +12,11 @@ datasource db {
 
 
 model User {
-  id    Int     @id @default(autoincrement())
-  github_id String?  @unique
+  id    Int     @id @unique @default(autoincrement())
   bounty_space_id String?
   bounty_id String?
-  name  String?
-  email String?
+  name  String? 
+  email String? @unique
   image String?
   created_at DateTime? @default(now()) 
   updated_at DateTime? @default(now())
@@ -49,12 +48,11 @@ model Bounty{
 
 }
 
-model BountyTransaction{
-  id Int @id @default(autoincrement())
-  bounty_id String?
-  user_id String?
-  creator_id String?
-  user_wallet String?
-  creator_wallet String?
-
-}
+// model BountyTransaction{
+//   id Int @id @default(autoincrement())
+//   bounty_id String?
+//   user_id String?
+//   creator_id String?
+//   user_wallet String?
+//   creator_wallet String?
+// }
