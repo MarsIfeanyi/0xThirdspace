@@ -1,7 +1,7 @@
 import React from 'react'
 
 // async function getInfo(){
-//   const data =await fetch("api/hello")
+//   const data =await fetch(`${process.env.NEXT_PUBLIC_THRIDSPACE_URL}/api/hello`)
 //   if(!data.ok){
 //     throw new Error
 
