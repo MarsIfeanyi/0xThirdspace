@@ -17,14 +17,14 @@ const GitHubAuth = (props: Props) => {
     return (
       <>
         <div className="text-center items-center mx-auto">
-          <p className="text-white font-roboto font-normal text-xl text-center mt-40">
+          <p className="text-white font-nexa font-normal text-xl text-center mt-40">
             {" "}
             Signed in as: {session.user.email}{" "}
           </p>
           <br />
           <button
             onClick={() => signOut()}
-            className="buttonGradient font-roboto text-white py-2 px-6 rounded-full font-medium text-xl "
+            className="buttonGradient font-nexa text-white py-2 px-6 rounded-full font-medium text-xl "
           >
             Sign out
           </button>
@@ -34,11 +34,11 @@ const GitHubAuth = (props: Props) => {
   }
   return (
     <>
-      <div className=" text-center mt-40 font-roboto font-semibold text-2xl ">
+      <div className=" text-center mt-40 font-nexa font-semibold text-2xl ">
         Not signed in <br />
         <button
           onClick={() => signIn()}
-          className="buttonGradient font-roboto text-white py-2 px-6 rounded-full font-medium text-xl"
+          className="buttonGradient font-nexa text-white py-2 px-6 rounded-full font-medium text-xl"
         >
           Sign in
         </button>

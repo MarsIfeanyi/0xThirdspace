@@ -8,12 +8,12 @@ const GetStarted = (props: Props) => {
   return (
     <>
       <div className="bg-black border border-[#5618FF] w-[50%] mx-auto flex flex-col mt-20 items-center  p-14 ">
-        <h2 className="text-white font-bold text-4xl text-center font-roboto">
+        <h2 className="text-white font-bold text-4xl text-center font-nexa">
           Get Started
         </h2>
 
         <p
-          className="text-[#999999] text-center mt-4 font-roboto
+          className="text-[#999999] text-center mt-4 font-nexa
         "
         >
           Find your next coding challenge or create your own. Our platform

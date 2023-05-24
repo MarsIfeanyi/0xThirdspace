@@ -25,11 +25,11 @@ const Home = (props: Props) => {
         <div className="">
           <Logo />
 
-          <h1 className="text-center text-white font-medium text-8xl  mt-20 font-roboto">
+          <h1 className="text-center text-white font-medium text-8xl  mt-20 font-nexa">
             Earn Rewards for <br /> Your Skills
           </h1>
 
-          <p className="text-center text-white font-normal  mt-6 font-inter  text-sm   ">
+          <p className="text-center text-white font-normal  mt-6 font-nexa  text-sm   ">
             Connect your GitHub account, join bounties, and earn rewards for
             your coding skills. Our smart <br /> contracts ensure fair payouts
             and easy payment processing
@@ -68,17 +68,17 @@ const Home = (props: Props) => {
           <div id="sigUpModal">
             <Modal isVisible={showModal} onClose={() => setShowModal(false)}>
               <div className="mx-auto items-center text-center text-white ">
-                <h2 className=" font-bold text-3xl text-center font-roboto mt-10">
+                <h2 className=" font-bold text-3xl text-center font-nexa mt-10">
                   Sign Up
                 </h2>
 
-                <p className="mt-5  font-roboto">
+                <p className="mt-5  font-nexa">
                   Seamlessly integrate your GitHub account with our platform.
                   Sign in and start <br /> completing bounties to earn rewards
                   for your coding skills
                 </p>
 
-                <h3 className="font-medium text-xl font-roboto mt-20 mb-10">
+                <h3 className="font-medium text-xl font-nexa mt-20 mb-10">
                   Continue with
                 </h3>
 
@@ -86,7 +86,7 @@ const Home = (props: Props) => {
                   <Link href="/github-auth" className=" ">
                     <button className=" text-white flex justify-center items-center gap-8 ">
                       <BsGithub className=" w-10 h-10" />
-                      <p className="font-normal text-xl font-roboto">Github</p>
+                      <p className="font-normal text-xl font-nexa">Github</p>
                     </button>
                   </Link>
                 </div>

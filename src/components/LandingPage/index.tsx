@@ -24,9 +24,9 @@ const index = () => {
         </div>
 
         {/* buttons */}
-        <div className="flex  justify-center items-center mx-auto py-10 max-w-4xl ">
+        <div className="flex font-nexa justify-center items-center mx-auto py-10 max-w-4xl ">
           <div className="flex justify-evenly items-center border border-lg-2 cursor-pointer rounded-full px-6 py-4  mx-4 text-white ">
-            <p>Sign In</p>
+            <p className="font-nexa">Sign In</p>
             <div className="relative flex items-center w-6 h-6 bg-lg-2  rounded-full ml-4  ">
               <Image
                 src={Arrow}
@@ -37,7 +37,7 @@ const index = () => {
           </div>
 
           <div className="flex justify-evenly items-center bg-lg-2 cursor-pointer rounded-full px-6 py-4  mx-4 text-white ">
-            <p>Sign Up</p>
+            <p className="font-nexa">Sign Up</p>
             <div className="relative flex items-center w-6 h-6 bg-black  rounded-full ml-4  ">
               <Image
                 src={Arrow}
@@ -55,7 +55,7 @@ const index = () => {
 
 export const Logo = () => {
   return (
-    <div className="flex justify-between items-center p-8">
+    <div className="flex justify-between font-nexa items-center p-8">
       <Link href="/">
         <p className="text-4xl  text-white">
           {/* cool trick for linear gradient on text */}

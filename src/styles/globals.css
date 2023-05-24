@@ -10,6 +10,18 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Nexa-bold";
+  src: url("../pages/fonts/Nexa-ExtraLight.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-nexa {
+  font-family: "Nexa-bold", sans-serif;
+  font-weight: bold;
+}
+
 body {
   background-image: url("../assets/backgorundImage.png");
   background-size: cover;

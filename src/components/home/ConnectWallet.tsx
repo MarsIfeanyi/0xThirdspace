@@ -10,12 +10,12 @@ const ConnectWallet = (props: Props) => {
   return (
     <>
       <div className="bg-black border border-[#5618FF] w-[50%] mx-auto flex flex-col mt-20 items-center  p-14 ">
-        <h2 className="text-white font-bold text-4xl text-center font-roboto">
+        <h2 className="text-white font-bold text-4xl text-center font-nexa">
           Connect wallet
         </h2>
 
         <p
-          className="text-[#999999] text-center mt-4 font-roboto
+          className="text-[#999999] text-center mt-4 font-nexa
         "
         >
           Connect your wallet to our platform and easily receive rewards for{" "}
@@ -29,7 +29,7 @@ const ConnectWallet = (props: Props) => {
           <Link href="/github-auth" className=" ">
             <button className=" text-white flex p-2 items-center ml-2 gap-4 ">
               <Image src={phanthom} alt="flowLogo" width={45} />
-              <p className="font-normal text-xl font-roboto">Phantom</p>
+              <p className="font-normal text-xl font-nexa">Phantom</p>
             </button>
           </Link>
         </div>
@@ -38,7 +38,7 @@ const ConnectWallet = (props: Props) => {
           <Link href="/github-auth" className=" ">
             <button className=" text-white flex p-2 items-center ml-2 gap-4 ">
               <Image src={metaMask} alt="flowLogo" width={45} />
-              <p className="font-normal text-xl font-roboto">Meta mask</p>
+              <p className="font-normal text-xl font-nexa">Meta mask</p>
             </button>
           </Link>
         </div>
@@ -46,7 +46,7 @@ const ConnectWallet = (props: Props) => {
           <Link href="/github-auth" className=" ">
             <button className=" text-white flex p-2 items-center ml-2 gap-4 ">
               <Image src={ethereum} alt="flowLogo" width={45} />
-              <p className="font-normal text-xl font-roboto">Ethereum wallet</p>
+              <p className="font-normal text-xl font-nexa">Ethereum wallet</p>
             </button>
           </Link>
         </div>
