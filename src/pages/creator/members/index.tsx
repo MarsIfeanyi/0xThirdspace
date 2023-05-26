@@ -1,9 +1,14 @@
-import React from 'react'
+import Members from "@/components/members/Members";
+import React from "react";
 
-const index = () => {
+type Props = {};
+
+const index = (props: Props) => {
   return (
-    <div>members</div>
-  )
-}
+    <div>
+      <Members />
+    </div>
+  );
+};
 
-export default index
+export default index;
