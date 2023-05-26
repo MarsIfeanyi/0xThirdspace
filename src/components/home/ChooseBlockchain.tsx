@@ -10,12 +10,12 @@ const ChooseBlockchain = (props: Props) => {
     <>
       <div className=" ">
         <div className="bg-black border-2 border-[#1F1F1F] shadow-2xl w-[50%] mx-auto flex flex-col mt-20 items-center  p-14 ">
-          <h2 className="text-white font-bold text-4xl text-center font-roboto">
+          <h2 className="text-white font-bold text-4xl text-center font-nexa">
             Choose the blockchain to power <br /> your Bounty space
           </h2>
 
           <p
-            className="text-[#999999] text-center mt-4 font-roboto
+            className="text-[#999999] text-center mt-4 font-nexa
         "
           >
             All interactions on your Bounty space will be only on the specific{" "}
@@ -27,7 +27,7 @@ const ChooseBlockchain = (props: Props) => {
             <Link href="/github-auth" className=" ">
               <button className=" text-white flex p-2 items-center ml-2 gap-4 ">
                 <Image src={flow} alt="flowLogo" width={45} />
-                <p className="font-normal text-xl font-roboto">
+                <p className="font-normal text-xl font-nexa">
                   Flow Blockchain
                 </p>
               </button>
@@ -38,7 +38,7 @@ const ChooseBlockchain = (props: Props) => {
             <Link href="/github-auth" className=" ">
               <button className=" text-white flex p-2 items-center ml-2 gap-4 ">
                 <Image src={evm} alt="flowLogo" width={45} />
-                <p className="font-normal text-xl font-roboto">
+                <p className="font-normal text-xl font-nexa">
                   EVM (Ethereum Virtual Machine)
                 </p>
               </button>

@@ -5,7 +5,7 @@ type Props = {};
 const Logo = (props: Props) => {
   return (
     <div>
-      <h1 className="ml-20 text-3xl text-white mt-10 font-roboto ">
+      <h1 className="ml-20 text-3xl text-white mt-10 font-nexa ">
         Third<span className="logoGradient">space</span>
       </h1>
     </div>

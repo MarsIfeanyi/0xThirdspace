@@ -17,8 +17,20 @@ import metaMask2 from "./metaMask2.svg";
 import ethereum2 from "./ethereum2.svg";
 import proceed from "./proceed.svg";
 import gitHub from "./gitHub.svg";
+import profileImage from "./profileImage.svg";
+import user01 from "./user01.svg";
+import user02 from "./user02.svg";
+import user03 from "./user01.svg";
+import user04 from "./user04.svg";
+import user05 from "./user05.svg";
 
 export {
+  user01,
+  user02,
+  user03,
+  user04,
+  user05,
+  profileImage,
   gitHub,
   phantom2,
   metaMask2,
