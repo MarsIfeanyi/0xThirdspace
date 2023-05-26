@@ -99,7 +99,7 @@ const MembersCart = (props: Props) => {
               <button className="items-center rounded-full flex flex-row bg-[#B2000029] border border-[#B20000] w-[120%] justify-center gap-1 p-2 font-nexa font-normal  ">
                 <p>Remove</p>
 
-                <div className="icon-container">
+                <div className="RemoveIcon-container">
                   <CiCircleRemove />
                 </div>
               </button>
