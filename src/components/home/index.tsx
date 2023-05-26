@@ -1,7 +1,5 @@
-import { arrowUp, userSignIn, signUp, gitHub } from "@/assets";
 import Logo from "@/components/ui/Logo";
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Modal from "../ui/Modal";
