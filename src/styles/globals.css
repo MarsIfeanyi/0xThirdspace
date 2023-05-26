@@ -257,3 +257,8 @@ input {
   transform: translateX(50%);
   font-size: 1.1rem;
 }
+
+.removeIcon-container {
+  color: white;
+  font-size: 1.2rem;
+}
