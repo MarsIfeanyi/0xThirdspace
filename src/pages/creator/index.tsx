@@ -1,11 +1,9 @@
-import React from 'react'
+import React from "react";
 
-const index = () => {
-  return (
-    <div>
-        bounterie
-    </div>
-  )
-}
+type Props = {};
 
-export default index
+const index = (props: Props) => {
+  return <div>Bounty</div>;
+};
+
+export default index;
