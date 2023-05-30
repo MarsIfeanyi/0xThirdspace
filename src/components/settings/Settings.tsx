@@ -9,6 +9,7 @@ import { IoSettingsOutline } from "react-icons/io5";
 
 import { FcSettings } from "react-icons/fc";
 import SettingCard from "./SettingsCard";
+import { BsFillGearFill } from "react-icons/bs";
 
 type Props = {};
 
@@ -33,7 +34,7 @@ const Settings = (props: Props) => {
           {/* Settings */}
 
           <div className="flex flex-row gap-2 items-center justify-center ">
-            <FcSettings className="w-6 h-6" />
+            <BsFillGearFill className="w-6 h-6" />
             <h2 className="text-white  font-nexa font-extrabold text-2xl ">
               Settings
             </h2>
