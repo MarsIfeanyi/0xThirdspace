@@ -23,8 +23,26 @@ import user02 from "./user02.svg";
 import user03 from "./user01.svg";
 import user04 from "./user04.svg";
 import user05 from "./user05.svg";
+import bounty01 from "./bounty01.svg";
+import bounty02 from "./bounty02.svg";
+import bounty03 from "./bounty03.svg";
+import bountyorg01 from "./bountyorg01.svg";
+import bountyorg02 from "./bountyorg02.svg";
+import bountyorg03 from "./bountyorg03.svg";
+import bountyorg04 from "./bountyorg04.svg";
+import bountyorg05 from "./bountyorg05.svg";
+import bountyorg06 from "./bountyorg06.svg";
 
 export {
+  bountyorg01,
+  bountyorg02,
+  bountyorg03,
+  bountyorg04,
+  bountyorg05,
+  bountyorg06,
+  bounty01,
+  bounty02,
+  bounty03,
   user01,
   user02,
   user03,
