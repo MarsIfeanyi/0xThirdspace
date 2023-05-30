@@ -179,6 +179,30 @@ input {
     /* Outset shadow */ inset -999px 0 0 black; /* The background color */
 }
 
+.btnBorderGradient4 {
+  display: flex;
+  width: 220px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  /* The background is used to specify the border background */
+  background: -moz-linear-gradient(60.56deg, #fc8c02 -42.7%, #5618ff 117.16%);
+  background: -webkit-linear-gradient(
+    60.56deg,
+    #fc8c02 -42.7%,
+    #5618ff 117.16%
+  );
+  /* Background origin is the padding box by default.
+  Override to make the background cover the border as well. */
+  -moz-background-origin: border;
+  background-origin: border-box;
+  /* A transparent border determines the width */
+  border: 1px solid transparent;
+  border-radius: 8px;
+  box-shadow: inset 0 0 1px black, /* Inset shadow */ 0 0 12px black,
+    /* Outset shadow */ inset -999px 0 0 black; /* The background color */
+}
+
 .layout {
   display: flex;
   height: 100vh;
