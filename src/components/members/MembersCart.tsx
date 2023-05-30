@@ -1,68 +1,10 @@
-import { user01, user02, user03, user04, user05 } from "@/assets";
+import { userDetails } from "@/constants";
 import Image from "next/image";
-import { RiFileCopyLine } from "react-icons/ri";
 import { CiCircleRemove } from "react-icons/ci";
 
 type Props = {};
 
-// render copy file icon
-// const copyWalletAddress = () => {
-//   return <RiFileCopyLine className="w-6 h-6" />;
-// };
-
 const MembersCart = (props: Props) => {
-  const userDetails = [
-    {
-      id: "1",
-      image: user01,
-      name: "Frank Williams",
-      socialHandle: "@Qubigs",
-      walletAddress: "Wj3b4....Hu73f7",
-      iconCopy: <RiFileCopyLine />,
-      remove: true,
-    },
-
-    {
-      id: "2",
-      image: user02,
-      name: "Frank Williams",
-      socialHandle: "@Qubigs",
-      walletAddress: "Wj3b4....Hu73f7",
-      iconCopy: <RiFileCopyLine />,
-      remove: true,
-    },
-
-    {
-      id: "3",
-      image: user03,
-      name: "Frank Williams",
-      socialHandle: "@Qubigs",
-      walletAddress: "Wj3b4....Hu73f7",
-      iconCopy: <RiFileCopyLine />,
-      remove: true,
-    },
-
-    {
-      id: "4",
-      image: user04,
-      name: "Frank Williams",
-      socialHandle: "@Qubigs",
-      walletAddress: "Wj3b4....Hu73f7",
-      iconCopy: <RiFileCopyLine />,
-      remove: true,
-    },
-
-    {
-      id: "5",
-      image: user05,
-      name: "Frank Williams",
-      socialHandle: "@Qubigs",
-      walletAddress: "Wj3b4....Hu73f7",
-      iconCopy: <RiFileCopyLine />,
-      remove: true,
-    },
-  ];
-
   return (
     <div className="bg-[#0A0A0A]  ">
       <div className="flex justify-between flex-row py-3 mx-6 font-nexa font-bold text-xl ">
