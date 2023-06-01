@@ -5,9 +5,11 @@ type PublicLayoutProps = { children: ReactNode };
 
 const PublicLayout = ({ children }: PublicLayoutProps) => {
   return (
-    <ChakraProvider>
-      <div>{children}</div>
-    </ChakraProvider>
+    <div className="landingPage">
+      <ChakraProvider>
+        <div>{children}</div>
+      </ChakraProvider>
+    </div>
   );
 };
 
