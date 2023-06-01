@@ -18,7 +18,7 @@ const BountyOrganization = (props: Props) => {
       {/* Image container */}
 
       <div className="px-10">
-        <div className="flex justify-end mt-10  ">
+        <div className="flex justify-end   ">
           <Link href="/">
             <Image
               src={profileImage}
@@ -29,7 +29,7 @@ const BountyOrganization = (props: Props) => {
           </Link>
         </div>
         {/* Search and Add Members container */}
-        <div className="flex flex-row  justify-between mt-10 ">
+        <div className="flex flex-row  justify-between mt-6 ">
           {/* Members */}
 
           <div className="flex flex-row gap-1 ">
