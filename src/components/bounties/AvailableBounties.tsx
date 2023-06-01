@@ -3,11 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { BiSearch } from "react-icons/bi";
-import { BsFillPeopleFill } from "react-icons/bs";
 import { AiOutlinePlus } from "react-icons/ai";
 import { FaMedal } from "react-icons/fa";
 import AvailableBountiesCard from "./AvailableBountiesCard";
-import BountyDetailModal from "./BountyDetailModal";
 import CreateBountyModal from "./CreateBountyModal";
 
 type Props = {};
@@ -17,9 +15,8 @@ const AvailableBounties = (props: Props) => {
   return (
     <div className="flex flex-col flex-wrap ml-[300px]  ">
       {/* Image container */}
-
       <div className="px-10">
-        <div className="flex justify-end mt-10  ">
+        <div className="flex justify-end   ">
           <Link href="/">
             <Image
               src={profileImage}
@@ -30,9 +27,8 @@ const AvailableBounties = (props: Props) => {
           </Link>
         </div>
         {/* Search and Add Members container */}
-        <div className="flex flex-row  justify-between mt-10 ">
+        <div className="flex flex-row  justify-between mt-6 ">
           {/* Members */}
-
           <div className="flex flex-row gap-1 ">
             <FaMedal className="w-6 h-6" />
             <h2 className="text-white  font-nexa font-extrabold text-xl ">
@@ -67,7 +63,6 @@ const AvailableBounties = (props: Props) => {
         </div>
 
         {/* AvailableBounties */}
-
         <div className=" mt-10">
           <Link href="/creator">
             <AvailableBountiesCard selectedBounty={null} />
