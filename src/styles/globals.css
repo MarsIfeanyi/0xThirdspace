@@ -1,13 +1,21 @@
+*,
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Roboto:wght@400;500;700;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 @font-face {
@@ -22,14 +30,13 @@
   font-weight: bold;
 }
 
-body {
+.landingPage {
   background-image: url("../assets/backgorundImage.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
 }
-
 .header__text span {
   color: linear-gradient(89.56deg, #fc8c02 -42.7%, #5618ff 117.16%);
 }
@@ -56,22 +63,6 @@ input {
   width: 100%;
   /* padding: 0.65rem 0.5rem; */
 }
-
-/* form {
-  width: 60vw;
-  max-width: 500px;
-  min-width: 300px;
-  margin: 0 auto;
-  padding-bottom: 2em;
-} */
-
-/* .viewBounty {
-  width: 489px;
-  height: 56px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 .mainCont {
   display: flex;
@@ -135,8 +126,8 @@ input {
 
 .btnBorderGradient2 {
   display: flex;
-  width: 170px;
-  height: 65px;
+  width: 160px;
+  height: 60px;
   /* The background is used to specify the border background */
   background: -moz-linear-gradient(60.56deg, #fc8c02 -42.7%, #5618ff 117.16%);
   background: -webkit-linear-gradient(
@@ -314,4 +305,8 @@ input {
 .settingIcon-container {
   color: white;
   font-size: 1.2rem;
+}
+
+.connect-button {
+  background-color: black;
 }
