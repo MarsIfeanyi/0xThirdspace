@@ -37,7 +37,7 @@ const CreateBountyModal = ({ isVisible, onClose }: Props) => {
               coding tasks completed.{" "}
             </p>
 
-            <div className="mt-10">
+            <div className="mt-4">
               <CreateBountyForm />
             </div>
           </div>
