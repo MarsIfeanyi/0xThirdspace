@@ -5,7 +5,7 @@ type BounterHunterProps = { children: ReactNode };
 const BounterHunter = ({ children }: BounterHunterProps) => {
   return (
     <ChakraProvider>
-      <div className="font-nexa relative">{children}</div>
+      <div className="font-nexa ">{children}</div>
     </ChakraProvider>
   );
 };
