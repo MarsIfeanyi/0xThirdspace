@@ -25,7 +25,7 @@
     "src/constants/index.js",
     "src/constants/index.js",
     "src/context/BountyPlatformContext.jsx",
-    "src/components/home/userAuth.jsx"
+    "src/components/Home/userAuth.jsx"
   ],
   "exclude": ["node_modules"]
 }
