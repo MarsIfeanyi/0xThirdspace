@@ -10,6 +10,8 @@ import Web3Modal from "web3modal";
 import { ethers } from "ethers";
 import { spawn } from "child_process";
 
+// import {Input} from "@chakra-ui/react"
+
 type Props = {};
 
 const CreateBountyForm = (props: Props) => {
@@ -97,7 +99,7 @@ const CreateBountyForm = (props: Props) => {
           <div className="flex flex-col space-y-1 ">
             <label htmlFor="repoLink">Title</label>
             <input
-              value={title}
+              defaultValue={title}
               onChange={titleChangeHandler}
               type="text"
               name="bounty_Name"
@@ -113,7 +115,7 @@ const CreateBountyForm = (props: Props) => {
               <label htmlFor="bounty_Name">Repo Link</label>
               <input
                 onChange={repoLinkChangeHandler}
-                value={repoLink}
+                defaultValue={repoLink}
                 type="text"
                 name="repoLink"
                 id="repoLink"
@@ -126,14 +128,13 @@ const CreateBountyForm = (props: Props) => {
             <div className="font-nexa flex flex-col space-y-1">
               <label
                 htmlFor="amount"
-                className="text-white
-        "
+                className="text-white"
               >
                 Amount
               </label>
               <input
                 onChange={amountChangeHandler}
-                value={amount}
+                defaultValue={amount}
                 type="number"
                 name="amount"
                 id="amount"
@@ -150,7 +151,7 @@ const CreateBountyForm = (props: Props) => {
               <label htmlFor="startDate">Start Date</label>
               <input
                 onChange={startDateChangeHandler}
-                value={startDate}
+                defaultValue={startDate}
                 type="date"
                 name="startDate"
                 id="startDate"
@@ -163,20 +164,20 @@ const CreateBountyForm = (props: Props) => {
             <div className="font-nexa flex flex-col space-y-1">
               <label
                 htmlFor="endDate"
-                className="text-white
-        "
+                className="text-white"
               >
                 End Date
               </label>
               <input
                 onChange={endDateChangeHandler}
-                value={endDate}
+                defaultValue={endDate}
                 type="date"
                 name="endDate"
                 id="endDate"
                 placeholder="Bounty amount in token"
                 className="text-white w-[435px] h-[33px] bg-transparent border border-[#999999]  outline-none p-4 "
               />
+              {/* <Input></Input> */}
             </div>
           </div>
 
@@ -185,7 +186,7 @@ const CreateBountyForm = (props: Props) => {
             <label htmlFor="description">Description</label>
             <textarea
               onChange={descriptionChangeHandler}
-              value={description}
+              defaultValue={description}
               name="description"
               id="description"
               cols={30}

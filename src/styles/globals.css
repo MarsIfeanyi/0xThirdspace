@@ -12,6 +12,11 @@ body {
 @tailwind components;
 @tailwind utilities;
 
+
+input {
+  color-scheme: dark;
+}
+
 *,
 *::before,
 *::after {
