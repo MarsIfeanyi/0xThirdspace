@@ -18,6 +18,14 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/constants/index.js",
+    "src/constants/index.js",
+    "src/context/BountyPlatformContext.jsx",
+    "src/components/home/userAuth.jsx"
+  ],
   "exclude": ["node_modules"]
 }

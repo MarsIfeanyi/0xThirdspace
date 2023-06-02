@@ -1,0 +1,58 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+
+model User {
+  id    Int     @id @unique @default(autoincrement())
+  bounty_space_id String?
+  bounty_id String?
+  name  String? 
+  email String? @unique
+  image String?
+  created_at DateTime? @default(now()) 
+  updated_at DateTime? @default(now())
+  user_wallet_address String?
+}
+
+model BountySpace{
+  id Int @id @default(autoincrement())
+  name String?
+  chain_id String?
+  image String?
+  user_id String?
+  visiblity_id String?
+}
+
+model Bounty{
+  id Int @id @default(autoincrement())
+  name String?
+  desc String?
+  user_id String?
+  bounty_space_id String?
+  created_at DateTime? @default(now()) 
+  updated_at DateTime? @default(now())
+  submission_start DateTime?
+  submission_end DateTime?
+  reward String
+  repo_link String?
+  bounty_creator_address String?
+
+}
+
+// model BountyTransaction{
+//   id Int @id @default(autoincrement())
+//   bounty_id String?
+//   user_id String?
+//   creator_id String?
+//   user_wallet String?
+//   creator_wallet String?
+// }

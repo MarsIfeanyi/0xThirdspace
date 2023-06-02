@@ -17,8 +17,40 @@ import metaMask2 from "./metaMask2.svg";
 import ethereum2 from "./ethereum2.svg";
 import proceed from "./proceed.svg";
 import gitHub from "./gitHub.svg";
+import profileImage from "./profileImage.svg";
+import user01 from "./user01.svg";
+import user02 from "./user02.svg";
+import user03 from "./user01.svg";
+import user04 from "./user04.svg";
+import user05 from "./user05.svg";
+import bounty01 from "./bounty01.svg";
+import bounty02 from "./bounty02.svg";
+import bounty03 from "./bounty03.svg";
+import bountyorg01 from "./bountyorg01.svg";
+import bountyorg02 from "./bountyorg02.svg";
+import bountyorg03 from "./bountyorg03.svg";
+import bountyorg04 from "./bountyorg04.svg";
+import bountyorg05 from "./bountyorg05.svg";
+import bountyorg06 from "./bountyorg06.svg";
+import success from "./success.svg";
 
 export {
+  success,
+  bountyorg01,
+  bountyorg02,
+  bountyorg03,
+  bountyorg04,
+  bountyorg05,
+  bountyorg06,
+  bounty01,
+  bounty02,
+  bounty03,
+  user01,
+  user02,
+  user03,
+  user04,
+  user05,
+  profileImage,
   gitHub,
   phantom2,
   metaMask2,
