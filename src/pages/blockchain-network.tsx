@@ -1,4 +1,4 @@
-import ChooseBlockchain from "@/components/home/ChooseBlockchain";
+import ChooseBlockchain from "@/components/Home/ChooseBlockchain";
 import React from "react";
 
 type Props = {};
