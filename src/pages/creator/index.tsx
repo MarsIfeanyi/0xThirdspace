@@ -1,4 +1,4 @@
-import AvailableBounties from "@/components/bounties/AvailableBounties";
+import AvailableBounties from "@/components/Creator/AvailableBounties";
 
 import React from "react";
 
