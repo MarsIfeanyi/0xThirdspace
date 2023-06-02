@@ -1,4 +1,4 @@
-import GitHubAuth from "@/components/home/GitHubAuth";
+import GitHubAuth from "@/components/Home/GitHubAuth";
 import React from "react";
 
 type Props = {};

@@ -1,4 +1,4 @@
-import ConnectWallet from "@/components/home/ConnectWallet";
+import ConnectWallet from "@/components/Home/ConnectWallet";
 import React from "react";
 
 type Props = {};
