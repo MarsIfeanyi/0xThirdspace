@@ -1,4 +1,4 @@
-import CreateBountySpace from "@/components/home/CreateBountySpace";
+import CreateBountySpace from "@/components/Home/CreateBountySpace";
 import React from "react";
 
 type Props = {};

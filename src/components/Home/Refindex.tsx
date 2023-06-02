@@ -1,12 +1,10 @@
-import { arrowUp, userSignIn, signUp, gitHub } from "@/assets";
-import Logo from "@/components/ui/Logo";
+import Logo from "@/components/Ui/Logo";
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import Modal from "../ui/Modal";
+import Modal from "../Ui/Modal";
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
-useState;
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 type Props = {};
 
@@ -22,42 +20,51 @@ const Home = (props: Props) => {
           <link rel="icon" href="/Logo.svg" />
         </Head>
 
-        <div className="">
-          <Logo />
+        <div className="flex bg-red-600 ">
+          <div className="flex  mx-20  bg-red-500">
+            <Logo />
 
-          <h1 className="text-center text-white font-medium text-8xl  mt-20 font-nexa">
-            Earn Rewards for <br /> Your Skills
+            <div className=" mt-2">
+              <ConnectButton />
+            </div>
+          </div>
+
+          <h1 className="text-center text-white font-extrabold text-6xl  font-nexa items-center justify-center mt-20 ">
+            The Next Gen All-In-One <br />{" "}
+            <span className="logoGradient">Workspace</span>
           </h1>
 
-          <p className="text-center text-white font-normal  mt-6 font-nexa  text-sm   ">
-            Connect your GitHub account, join bounties, and earn rewards for
-            your coding skills. Our smart <br /> contracts ensure fair payouts
-            and easy payment processing
-          </p>
+          <div className="text-center text-white font-normal  mt-10 font-nexa  text-sm   ">
+            <p className="leading-6">
+              Connect your GitHub account, join bounties, and earn rewards for
+              your coding skills. Our smart <br /> contracts ensure fair payouts
+              and easy payment processing
+            </p>
+          </div>
 
           <div className="flex flex-col md:flex-row text-white gap-10 justify-center mt-10">
-            <Link href="/#sigUpModal" className="  flex   btnBorderGradient2  ">
+            <Link href="/#sigUpModal" className="flex   btnBorderGradient2  ">
               <button
                 className="flex justify-center items-center mx-auto gap-8"
                 onClick={() => setShowModal(true)}
               >
                 <p className="">Sign In</p>
 
-                <div className="btnBackgroundGradient rounded-full w-[45px] h-[45px] items-center flex justify-end ">
+                <div className="btnBackgroundGradient rounded-full w-[40px] h-[40px] items-center flex justify-end ">
                   <BsArrowUpRight className=" w-6 h-6  mx-auto flex" />
                 </div>
               </button>
             </Link>
             <Link
               href="/#sigUpModal"
-              className="btnBackgroundGradient flex w-[170px] h-[65px] rounded-[50px]"
+              className="btnBackgroundGradient flex w-[160px] h-[60px] rounded-[50px]"
             >
               <button
                 className="flex justify-center items-center mx-auto gap-8"
                 onClick={() => setShowModal(true)}
               >
                 <p>Sign Up</p>
-                <div className="bg-black rounded-full w-[45px] h-[45px] items-center flex justify-end ">
+                <div className="bg-black rounded-full w-[40px] h-[40px] items-center flex justify-end ">
                   <BsArrowUpRight className=" w-6 h-6  mx-auto flex" />
                 </div>
               </button>

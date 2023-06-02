@@ -1,4 +1,5 @@
-import Home from "@/components/home";
+import Home from "@/components/Home/Refindex";
+import LandingPage from "@/components/Home/LandingPage";
 
 type Props = {};
 
@@ -6,7 +7,7 @@ const HomePage = (props: Props) => {
   return (
     <>
       <div>
-        <Home />
+        <LandingPage />
       </div>
     </>
   );

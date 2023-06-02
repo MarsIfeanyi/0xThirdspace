@@ -5,7 +5,6 @@ import { useRouter } from "next/router";
 import { FaMedal } from "react-icons/fa";
 import { BsFillGearFill } from "react-icons/bs";
 import { IoPeopleSharp } from "react-icons/io";
-import { Logo } from "../LandingPage";
 
 import React, { ReactNode } from "react";
 import {
@@ -16,6 +15,7 @@ import {
   MenuList,
   Portal,
 } from "@chakra-ui/react";
+import Logo from "../Ui/Logo";
 
 const iconItems = [
   {
@@ -67,7 +67,7 @@ const CreatorSidebar = ({ children }) => {
           ))}
         </div>
 
-        <div>
+        <div className="ml-4 mb-10">
           <Logo />
         </div>
       </div>
