@@ -59,20 +59,20 @@ const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
       if (router.pathname.startsWith("/creator")) {
         return (
           <CreatorBounties>
-            <SessionProvider session={session}>{page}</SessionProvider>
+            <div>{page}</div>
           </CreatorBounties>
         );
       }
       if (router.pathname.startsWith("/hunter")) {
         return (
           <BounterHunter>
-            <SessionProvider session={session}>{page}</SessionProvider>
+            <div>{page}</div>
           </BounterHunter>
         );
       }
       return (
         <PublicLayout>
-          <SessionProvider session={session}>{page}</SessionProvider>
+          <div>{page}</div>
         </PublicLayout>
       );
     });
