@@ -1,4 +1,4 @@
-import BountyOrganization from "@/components/bounties/BountyOrganization";
+import BountyOrganization from "@/components/Creator/BountyOrganization";
 import React from "react";
 
 type Props = {};

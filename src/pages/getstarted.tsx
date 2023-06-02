@@ -1,4 +1,4 @@
-import GetStarted from "@/components/home/GetStarted";
+import GetStarted from "@/components/Home/GetStarted";
 import React from "react";
 
 type Props = {};
