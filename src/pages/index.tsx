@@ -1,5 +1,5 @@
-import Home from "@/components/home/Refindex";
-import LandingPage from "@/components/home/LandingPage";
+import Home from "@/components/Home/Refindex";
+import LandingPage from "@/components/Home/LandingPage";
 
 type Props = {};
 
