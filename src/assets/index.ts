@@ -39,8 +39,10 @@ import avb03 from "./avb03.svg";
 import avb04 from "./avb04.svg";
 import avb05 from "./avb05.svg";
 import avb06 from "./avb06.svg";
+import logo from "./logo.svg";
 
 export {
+  logo,
   avb01,
   avb02,
   avb03,
