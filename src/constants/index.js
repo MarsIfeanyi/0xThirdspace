@@ -10,9 +10,82 @@ import {
   user03,
   user04,
   user05,
+  avb01,
+  avb02,
+  avb03,
+  avb04,
+  avb05,
+  avb06,
 } from "@/assets";
 import { RiFileCopyLine } from "react-icons/ri";
 import { bounty01, bounty02, bounty03 } from "@/assets";
+
+export const ViewAvailableBounties = [
+  {
+    id: "1",
+    image: avb01,
+    title: "Armored Core: Verdict Day access memory violation crash",
+    description:
+      "Acronis looks forward to working with the security community to find security vulnerabilities in order to keep our businesses and",
+    startDate: "    21st June, 2023",
+    endDate: " 21st July, 2023",
+    reward: " Reward: $50,000",
+  },
+
+  {
+    id: "2",
+    image: avb04,
+    title: "TCP over Wifi for Raspberry Pi Pico W in TinyGo",
+    description:
+      "The aim of this project is to implement the missing functionality needed to control the Ethernet/TCP interface on the Raspberry ...........",
+    startDate: "    21st June, 2023",
+    endDate: " 21st July, 2023",
+    reward: " Reward: $50,000",
+  },
+  {
+    id: "3",
+    image: avb02,
+    title: "Admiral",
+    description:
+      "No technology is perfect, and Admiral believes that working with skilled security researchers across the globe is crucial in identifying weaknesses in any technology. If you believe you've found ........",
+    startDate: "    21st June, 2023",
+    endDate: " 21st July, 2023",
+    reward: " Reward: $50,000",
+  },
+
+  {
+    id: "4",
+    image: avb05,
+    title: "Building with VS2022 under Windows 11",
+    description:
+      "I'm trying to get this (as well as the InfernoEmbedded fork) to build for several hours now. Unfortunately the node-gyp is not working. ...........",
+    startDate: "    21st June, 2023",
+    endDate: " 21st July, 2023",
+    reward: " Reward: $50,000",
+  },
+
+  {
+    id: "5",
+    image: avb03,
+    title: "Synchronizing Settings in multiple devices",
+    description:
+      "No technology is perfect, and Admiral believes that working with skilled security researchers across the globe is crucial isfijaif wifaw",
+    startDate: "    21st June, 2023",
+    endDate: " 21st July, 2023",
+    reward: " Reward: $50,000",
+  },
+
+  {
+    id: "6",
+    image: avb06,
+    title: "Armored Core: Verdict Day access memory violation crash",
+    description:
+      "with the use of llvm ppu decoder, the game hit playable 30 fps in average. however, every end of the mission. the game crashed ......",
+    startDate: "    21st June, 2023",
+    endDate: " 21st July, 2023",
+    reward: " Reward: $50,000",
+  },
+];
 
 export const userDetails = [
   {
@@ -110,35 +183,35 @@ export const BountyOrganizationData = [
   },
   {
     id: "2",
-    image: bountyorg01,
+    image: bountyorg02,
     title: "Bulls Eye Bounty Space",
     numMembers: "234,435",
     numBounties: "32",
   },
   {
     id: "3",
-    image: bountyorg01,
+    image: bountyorg03,
     title: "Bulls Eye Bounty Space",
     numMembers: "234,435",
     numBounties: "32",
   },
   {
     id: "4",
-    image: bountyorg01,
+    image: bountyorg04,
     title: "Bulls Eye Bounty Space",
     numMembers: "234,435",
     numBounties: "32",
   },
   {
     id: "5",
-    image: bountyorg01,
+    image: bountyorg05,
     title: "Bulls Eye Bounty Space",
     numMembers: "234,435",
     numBounties: "32",
   },
   {
     id: "6",
-    image: bountyorg01,
+    image: bountyorg06,
     title: "Bulls Eye Bounty Space",
     numMembers: "234,435",
     numBounties: "32",
