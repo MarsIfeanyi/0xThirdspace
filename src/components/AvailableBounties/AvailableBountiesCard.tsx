@@ -2,9 +2,10 @@ import { ViewAvailableBounties } from "@/constants";
 import Image from "next/image";
 import React, { useState } from "react";
 import { BiSearch } from "react-icons/bi";
+import BountyDetailModal from "./BountyDetailModal";
 
 type Props = {
-  //   selectedBounty: Bounty | null;
+  selectedBounty: Bounty | null;
 };
 
 type Bounty = {
@@ -17,7 +18,7 @@ type Bounty = {
   reward: string;
 };
 
-const AvaialableBountiesCard = (props: Props) => {
+const AvailableBountiesCard = (props: Props) => {
   const [showModal, setShowModal] = useState(false);
   const [selectedBounty, setSelectedBounty] = useState<Bounty | null>(null);
 
@@ -35,7 +36,7 @@ const AvaialableBountiesCard = (props: Props) => {
           onClick={() => handleBountyClick(viewAvailableBounty)}
         >
           <div className="border-[#1F1F1F] border  mt-4 mx-6 relative">
-            <div className="flex flex-row gap-4 p-6">
+            <div className="flex flex-row gap-4 p-6 cursor-pointer ">
               <Image
                 src={viewAvailableBounty.image}
                 alt="bountyImage"
@@ -70,8 +71,15 @@ const AvaialableBountiesCard = (props: Props) => {
           </div>
         </div>
       ))}
+
+      {/* BountyDetail Modal */}
+      <BountyDetailModal
+        isVisible={showModal}
+        onClose={() => setShowModal(false)}
+        selectedBounty={selectedBounty}
+      ></BountyDetailModal>
     </div>
   );
 };
 
-export default AvaialableBountiesCard;
+export default AvailableBountiesCard;
