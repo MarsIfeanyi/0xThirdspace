@@ -5,7 +5,8 @@ import { useState } from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import GetStartedModal from "./GetStartedModal";
-useState;
+import { logo } from "@/assets";
+import Image from "next/image";
 
 type Props = {};
 
@@ -23,7 +24,7 @@ const LandingPage = (props: Props) => {
 
         <div className="">
           <div className="flex justify-between mx-12 ">
-            <Logo />
+            <Image src={logo} alt="logo" width={180} />
 
             <div className=" mt-2">
               <ConnectButton />
