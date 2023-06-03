@@ -8,7 +8,7 @@ type Props = {};
 const CreateBountySpace = (props: Props) => {
   return (
     <>
-      <div className="bg-black border border-[#5618FF] w-[50%] mx-auto flex flex-col mt-20 items-center  p-14 ">
+      <div className="bg-black w-[1000px] mx-auto flex flex-col mt-10 items-center  p-14 ">
         <h2 className="text-white font-bold text-4xl text-center font-nexa">
           Create Bounty Space Name
         </h2>
@@ -25,7 +25,7 @@ const CreateBountySpace = (props: Props) => {
         <CreateBountySpaceForm />
 
         <div className="btnBackgroundGradient  rounded-[8px] mt-20 mb-10 ">
-          <Link href="/" className=" ">
+          <Link href="/creator" className=" ">
             <button className=" text-white w-[489px] h-[56px] flex justify-center items-center gap-2 ">
               Proceed to dashboard
               <BsArrowUpRight className=" w-6 h-6" />
