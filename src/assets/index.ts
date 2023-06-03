@@ -33,8 +33,20 @@ import bountyorg04 from "./bountyorg04.svg";
 import bountyorg05 from "./bountyorg05.svg";
 import bountyorg06 from "./bountyorg06.svg";
 import success from "./success.svg";
+import avb01 from "./avb01.svg";
+import avb02 from "./avb02.svg";
+import avb03 from "./avb03.svg";
+import avb04 from "./avb04.svg";
+import avb05 from "./avb05.svg";
+import avb06 from "./avb06.svg";
 
 export {
+  avb01,
+  avb02,
+  avb03,
+  avb04,
+  avb05,
+  avb06,
   success,
   bountyorg01,
   bountyorg02,
