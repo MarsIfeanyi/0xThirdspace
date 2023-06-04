@@ -118,7 +118,7 @@ const BountyDetailModal = ({ isVisible, onClose, selectedBounty }: Props) => {
                   className="font-nexa btnBackgroundGradient rounded-[8px] w-[220px] h-[50px] items-center justify-center flex flex-row gap-2"
                   onClick={() => setShowModal(true)}
                 >
-                  <p className="">Join Bounty</p>
+                  <p className="">Submit Work</p>
                   <BsArrowUpRight className=" w-6 h-6 " />
                 </button>
               </div>
