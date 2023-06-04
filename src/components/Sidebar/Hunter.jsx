@@ -20,12 +20,12 @@ import Logo from "../Ui/Logo";
 const hunterIconItems = [
   {
     text: "Bounties",
-    link: "/creator",
+    link: "/hunter",
     icon: "fas fa-medal",
   },
   {
     text: "Members",
-    link: "/creator/members",
+    link: "/hunter/members",
     icon: "fa-solid fa-people-group",
   },
 ];
