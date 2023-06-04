@@ -110,35 +110,35 @@ export const BountyOrganizationData = [
   },
   {
     id: "2",
-    image: bountyorg01,
+    image: bountyorg02,
     title: "Bulls Eye Bounty Space",
     numMembers: "234,435",
     numBounties: "32",
   },
   {
     id: "3",
-    image: bountyorg01,
+    image: bountyorg03,
     title: "Bulls Eye Bounty Space",
     numMembers: "234,435",
     numBounties: "32",
   },
   {
     id: "4",
-    image: bountyorg01,
+    image: bountyorg04,
     title: "Bulls Eye Bounty Space",
     numMembers: "234,435",
     numBounties: "32",
   },
   {
     id: "5",
-    image: bountyorg01,
+    image: bountyorg05,
     title: "Bulls Eye Bounty Space",
     numMembers: "234,435",
     numBounties: "32",
   },
   {
     id: "6",
-    image: bountyorg01,
+    image: bountyorg06,
     title: "Bulls Eye Bounty Space",
     numMembers: "234,435",
     numBounties: "32",
@@ -152,5 +152,97 @@ export const BountyDetails = [
       "The development target is the RP2040 microcontroller using the Go programming language that comes in the Pico W board package. TinyGo is the compiler which lets us compile Go code to the RP2040. The CYW43439 is connected to the RP2040 (Raspberry Pi microcontroller) via SPI where SDO and SDI are shared on the same pin. The communication today in TinyGo happens via software (bitbang) SPI. The work done so far has been achieved by porting over the C version of the driver: georgerobotics/cyw43-driver.",
     requirement:
       "RFC2119 language will be used throughout this document and MUST be interpreted accordingly[^1], source that does not conform to this specification may be rejected as a solution to this issue. The Programmer or just Programmer is the entity which submits the pull request seeking to resolve this issue. Source is the source code submitted by the Programmer seeking to resolve this issue. The Maintainer is Patricio Whittingslow- github alias @soypat.The key words  and OPTIONAL in this document are to be interpreted as described in RFC 2119.It is important to note that the Source will not be held to higher standards than the already existing code in this repository, so looking at existing code is a good way to get up to speed on expectations.",
+  },
+];
+
+export const JoinedBountyData = [
+  {
+    id: "1",
+    image: bountyorg01,
+    title: "Bounties to Bounties",
+    submissionStatus: "Submission Status",
+    inReview: true,
+  },
+  {
+    id: "2",
+    image: bountyorg02,
+    title: "Bounties to Bounties",
+    submissionStatus: "Submission Status",
+    approved: true,
+  },
+  {
+    id: "3",
+    image: bountyorg03,
+    title: "Bounties to Bounties",
+    submissionStatus: "Submission Status",
+    declined: true,
+  },
+  {
+    id: "4",
+    image: bountyorg04,
+    title: "Bounties to Bounties",
+    submissionStatus: "Submission Status",
+    inReview: true,
+  },
+  {
+    id: "5",
+    image: bountyorg05,
+    title: "Bounties to Bounties",
+    submissionStatus: "Submission Status",
+    approved: true,
+  },
+  {
+    id: "6",
+    image: bountyorg06,
+    title: "Bounties to Bounties",
+    submissionStatus: "Submission Status",
+    declined: true,
+  },
+];
+
+export const hunterUserDetails = [
+  {
+    id: "1",
+    image: user01,
+    name: "Frank Williams",
+    socialHandle: "@Qubigs",
+    walletAddress: "Wj3b4shf8wuefhwe8euhuhuuhfHu73f7",
+    iconCopy: <RiFileCopyLine />,
+  },
+
+  {
+    id: "2",
+    image: user02,
+    name: "Frank Williams",
+    socialHandle: "@Qubigs",
+    walletAddress: "Wj3b4shf8wuefhwe8euhuhuuhfHu73f7",
+    iconCopy: <RiFileCopyLine />,
+  },
+
+  {
+    id: "3",
+    image: user03,
+    name: "Frank Williams",
+    socialHandle: "@Qubigs",
+    walletAddress: "Wj3b4shf8wuefhwe8euhuhuuhfHu73f7",
+    iconCopy: <RiFileCopyLine />,
+  },
+
+  {
+    id: "4",
+    image: user04,
+    name: "Frank Williams",
+    socialHandle: "@Qubigs",
+    walletAddress: "Wj3b4shf8wuefhwe8euhuhuuhfHu73f7",
+    iconCopy: <RiFileCopyLine />,
+  },
+
+  {
+    id: "5",
+    image: user05,
+    name: "Frank Williams",
+    socialHandle: "@Qubigs",
+    walletAddress: "Wj3b4shf8wuefhwe8euhuhuuhfHu73f7",
+    iconCopy: <RiFileCopyLine />,
   },
 ];
