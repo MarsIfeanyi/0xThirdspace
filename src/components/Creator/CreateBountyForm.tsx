@@ -18,8 +18,8 @@ const CreateBountyForm = (props: Props) => {
   const [title, setTitle] = useState("");
   const [repoLink, setRepoLink] = useState("");
   const [amount, setAmount] = useState("");
-  const [startDate, setStartDate] = useState("");
-  const [endDate, setEndDate] = useState("");
+  const [startDate, setStartDate] = useState<Date>();
+  const [endDate, setEndDate] = useState<Date>();
   const [description, setDescription] = useState("");
 
   const [isLoading, setIsLoading] = useState(false);
@@ -39,11 +39,11 @@ const CreateBountyForm = (props: Props) => {
   };
 
   const startDateChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setStartDate(e.target.value);
+    setStartDate(new Date(e.target.value));
   };
 
   const endDateChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setEndDate(e.target.value);
+    setEndDate(new Date(e.target.value));
   };
 
   const descriptionChangeHandler = (
@@ -57,21 +57,26 @@ const CreateBountyForm = (props: Props) => {
 
     setIsLoading(true);
 
+
     try {
-      const response = await fetch("url", {
-        method: "POST",
-        body: JSON.stringify({
-          title,
-          repoLink,
-          amount,
-          startDate,
-          endDate,
-          description,
-        }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_BASE_URL}/api/Bounty/create`,
+        {
+          method: "POST",
+          body: JSON.stringify({
+            name: title,
+            repo_link: repoLink,
+            reward: amount,
+            submission_start: startDate,
+            submission_end: endDate,
+            desc: description,
+            bounty_space_id: "1",
+          }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       const data = await response.json();
 
@@ -126,10 +131,7 @@ const CreateBountyForm = (props: Props) => {
             </div>
 
             <div className="font-nexa flex flex-col space-y-1">
-              <label
-                htmlFor="amount"
-                className="text-white"
-              >
+              <label htmlFor="amount" className="text-white">
                 Amount
               </label>
               <input
@@ -162,10 +164,7 @@ const CreateBountyForm = (props: Props) => {
             </div>
 
             <div className="font-nexa flex flex-col space-y-1">
-              <label
-                htmlFor="endDate"
-                className="text-white"
-              >
+              <label htmlFor="endDate" className="text-white">
                 End Date
               </label>
               <input

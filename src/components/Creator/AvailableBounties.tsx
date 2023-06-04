@@ -10,6 +10,10 @@ import CreateBountyModal from "./CreateBountyModal";
 
 type Props = {};
 
+
+
+
+
 const AvailableBounties = (props: Props) => {
   const [showModal, setShowModal] = useState<boolean>(false);
   return (
@@ -63,11 +67,11 @@ const AvailableBounties = (props: Props) => {
         </div>
 
         {/* AvailableBounties */}
-        <div className=" mt-10">
-          <Link href="/creator">
+        <>
+          <Link href="/creator" className=" mt-10">
             <AvailableBountiesCard selectedBounty={null} />
           </Link>
-        </div>
+        </>
       </div>
 
       {/* Create Bounty Modal Overlay*/}
