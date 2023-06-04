@@ -6,9 +6,6 @@ import { BiSearch } from "react-icons/bi";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { AiOutlinePlus } from "react-icons/ai";
 import MembersCart from "./MembersCart";
-import AddMemberModal from "./AddMemberModal";
-import AddMemberForm from "./AddMemberForm";
-import { BsArrowUpRight } from "react-icons/bs";
 
 type Props = {};
 
