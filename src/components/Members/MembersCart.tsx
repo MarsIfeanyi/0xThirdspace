@@ -15,7 +15,7 @@ const MembersCart = (props: Props) => {
       {userDetails.map((userDetail) => (
         <div
           key={userDetail.id}
-          className=" flex  flex-row justify-between p-4 items-center "
+          className=" flex  flex-row justify-between p-4 items-center border-b   border-[#1F1F1F]   "
         >
           <div className="flex flex-row items-center gap-2">
             <Image
