@@ -1,4 +1,4 @@
-import Members from "@/components/Members/Members";
+import Members from "@/components/Hunter/Members/Members";
 import React from "react";
 
 type Props = {};
