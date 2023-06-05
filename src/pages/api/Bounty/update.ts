@@ -6,7 +6,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     try {
         const { ...payload } = req.body
         delete payload.id
-        const ress = await prisma.Bounty.update({
+        const ress = await prisma.bounty.update({
             where: {
                 id: req.body.id
             },

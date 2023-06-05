@@ -1,5 +1,5 @@
 // SignUp or SignIn a user
-
+"use client"
 import { useSession, signIn, signOut } from "next-auth/react";
 import Image from "next/image";
 Image;

@@ -7,7 +7,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         try {
             // console.log(req.body,"req.body")
             const { ...input } = req.body
-            const ress = await prisma.Bounty.create({
+            const ress = await prisma.bounty.create({
                 data: input
             })
 

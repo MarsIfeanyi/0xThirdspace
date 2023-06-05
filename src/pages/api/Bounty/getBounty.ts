@@ -6,7 +6,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   if (req.method === "GET") {
     try {
       // console.log(req.body,"req.body")
-      const ress = await prisma.Bounty.findMany({
+      const ress = await prisma.bounty.findMany({
         
       })
 

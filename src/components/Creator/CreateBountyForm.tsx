@@ -18,8 +18,8 @@ const CreateBountyForm = (props: Props) => {
   const [title, setTitle] = useState("");
   const [repoLink, setRepoLink] = useState("");
   const [amount, setAmount] = useState("");
-  const [startDate, setStartDate] = useState<Date>();
-  const [endDate, setEndDate] = useState<Date>();
+  const [startDate, setStartDate] = useState<any>();
+  const [endDate, setEndDate] = useState<any>();
   const [description, setDescription] = useState("");
 
   const [isLoading, setIsLoading] = useState(false);
@@ -153,7 +153,7 @@ const CreateBountyForm = (props: Props) => {
               <label htmlFor="startDate">Start Date</label>
               <input
                 onChange={startDateChangeHandler}
-                defaultValue={startDate}
+                defaultValue={startDate??""}
                 type="date"
                 name="startDate"
                 id="startDate"

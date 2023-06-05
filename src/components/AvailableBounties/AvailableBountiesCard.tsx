@@ -18,7 +18,7 @@ type Bounty = {
   reward: string;
 };
 
-const AvailableBountiesCard = (props: Props) => {
+const AvailableBountiesCard = (props:any ) => {
   const [showModal, setShowModal] = useState(false);
   const [selectedBounty, setSelectedBounty] = useState<Bounty | null>(null);
 

@@ -26,7 +26,7 @@ import BountyPlatformContextProvider from "@/context/BountyPlatformContext";
 import Head from "next/head";
 const { chains, publicClient } = configureChains(
   [mainnet, polygon, optimism, arbitrum],
-  [alchemyProvider({ apiKey: process.env.ALCHEMY_ID }), publicProvider()]
+  [alchemyProvider({ apiKey: "0" }), publicProvider()]
 );
 const { connectors } = getDefaultWallets({
   appName: "My RainbowKit App",
