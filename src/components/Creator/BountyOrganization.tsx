@@ -9,6 +9,8 @@ import { FaMedal } from "react-icons/fa";
 import BountyOrganizationCard from "./BountyOrganizationCard";
 import CreateBountyModal from "./CreateBountyModal";
 
+
+
 type Props = {};
 
 const BountyOrganization = (props: Props) => {

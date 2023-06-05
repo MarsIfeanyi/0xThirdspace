@@ -2,7 +2,7 @@ import { createContext, ReactNode, useState } from "react";
 
 const initialValue = { isCollapsed: false };
 
-const SidebarContext = createContext(initialValue);
+const SidebarContext = createContext<any>(initialValue);
 
 const SidebarProvider = ({ children }:{children:ReactNode}) => {
   const [isCollapsed, setCollapse] = useState(false);

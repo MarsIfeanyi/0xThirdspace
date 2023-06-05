@@ -3,24 +3,20 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { BiSearch } from "react-icons/bi";
+import { BsFillPeopleFill } from "react-icons/bs";
 import { AiOutlinePlus } from "react-icons/ai";
-import { FaMedal } from "react-icons/fa";
-import AvailableBountiesCard from "./AvailableBountiesCard";
-import CreateBountyModal from "./CreateBountyModal";
+import MembersCart from "./MembersCart";
 
 type Props = {};
 
-
-
-
-
-const AvailableBounties = (props: Props) => {
+const Members = (props: Props) => {
   const [showModal, setShowModal] = useState<boolean>(false);
   return (
     <div className="flex flex-col flex-wrap ml-[300px]  ">
       {/* Image container */}
+
       <div className="px-10">
-        <div className="flex justify-end   ">
+        <div className="flex justify-end ">
           <Link href="/">
             <Image
               src={profileImage}
@@ -31,12 +27,13 @@ const AvailableBounties = (props: Props) => {
           </Link>
         </div>
         {/* Search and Add Members container */}
-        <div className="flex flex-row  justify-between mt-6 ">
+        <div className="flex flex-row  justify-between mt-10 ">
           {/* Members */}
-          <div className="flex flex-row gap-1 ">
-            <FaMedal className="w-6 h-6" />
+
+          <div className="flex flex-row gap-2 ">
+            <BsFillPeopleFill className="w-6 h-6" />
             <h2 className="text-white  font-nexa font-extrabold text-xl ">
-              Bounties
+              Members
             </h2>
           </div>
 
@@ -51,38 +48,15 @@ const AvailableBounties = (props: Props) => {
               className="w-full  outline-none  text-white py-2 px-4 bg-[#0F0F0F] rounded-full "
             />
           </div>
-
-          <button
-            className="flex flex-row gap-2 rounded-md btnBackgroundGradient items-center px-2 "
-            onClick={() => setShowModal(true)}
-          >
-            <h2
-              className="text-white font-nexa font-bold text-xl "
-              onClick={() => setShowModal(true)}
-            >
-              Create Bounty
-            </h2>
-            <AiOutlinePlus className="w-6 h-6" />
-          </button>
         </div>
 
-        {/* AvailableBounties */}
-        <>
-          <Link href="/creator" className=" mt-10">
-            <AvailableBountiesCard selectedBounty={null} />
-          </Link>
-        </>
-      </div>
-
-      {/* Create Bounty Modal Overlay*/}
-      <div>
-        <CreateBountyModal
-          isVisible={showModal}
-          onClose={() => setShowModal(false)}
-        ></CreateBountyModal>
+        {/* user container */}
+        <div className=" mt-10">
+          <MembersCart />
+        </div>
       </div>
     </div>
   );
 };
 
-export default AvailableBounties;
+export default Members;

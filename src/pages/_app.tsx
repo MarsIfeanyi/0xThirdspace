@@ -23,9 +23,10 @@ import { mainnet, polygon, optimism, arbitrum } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 import BountyPlatformContextProvider from "@/context/BountyPlatformContext";
+import Head from "next/head";
 const { chains, publicClient } = configureChains(
   [mainnet, polygon, optimism, arbitrum],
-  [alchemyProvider({ apiKey: process.env.ALCHEMY_ID }), publicProvider()]
+  [alchemyProvider({ apiKey: "0" }), publicProvider()]
 );
 const { connectors } = getDefaultWallets({
   appName: "My RainbowKit App",
@@ -59,20 +60,29 @@ const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
       if (router.pathname.startsWith("/creator")) {
         return (
           <CreatorBounties>
-            <SessionProvider session={session}>{page}</SessionProvider>
+            <Head>
+              <title>ThridSpace - Next Gen Web3 Project Management Tool</title>
+            </Head>
+            <div>{page}</div>
           </CreatorBounties>
         );
       }
       if (router.pathname.startsWith("/hunter")) {
         return (
           <BounterHunter>
-            <SessionProvider session={session}>{page}</SessionProvider>
+            <Head>
+              <title>ThridSpace - Next Gen Web3 Project Management Tool</title>
+            </Head>
+            <div>{page}</div>
           </BounterHunter>
         );
       }
       return (
         <PublicLayout>
-          <SessionProvider session={session}>{page}</SessionProvider>
+          <Head>
+            <title>ThridSpace - Next Gen Web3 Project Management Tool</title>
+          </Head>
+          <div>{page}</div>
         </PublicLayout>
       );
     });

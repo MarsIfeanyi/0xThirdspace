@@ -1,8 +1,5 @@
-import AvailableBounties from "@/components/Creator/AvailableBounties";
-
+import AvailableBounties from "@/components/Hunter/Bounties/AvailableBounties";
 import React from "react";
-
-AvailableBounties;
 
 type Props = {};
 

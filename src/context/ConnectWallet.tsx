@@ -3,7 +3,7 @@ import { ethers } from "ethers";
 import { contractABI, contractAddress } from "../utils/constants";
 
 // Creating a context
-export const TransactionContext = React.createContext();
+export const TransactionContext = React.createContext<any>(()=>['']);
 
 // destructuring ethereum object from window.ethereum... The ethereum object will be available on the console if you have metamask installed
 const { ethereum } = window;
@@ -43,7 +43,7 @@ const getEthereumContract = () => {
  */
 
 // Providing the context ie creating a provider for the defined context... Hint: TransactionProvider will be used as a wrapper in the  App component, and thus whatever data (value) we put inside the TransactionProvider will be accessible everywhere on the App ie App wide state
-export const TransactionProvider = ({ children }) => {
+export const TransactionProvider = ({ children }:any) => {
   const [currentAccount, setCurrentAccount] = useState("");
   const [formData, setFormData] = useState({
     addressTo: "",
@@ -57,7 +57,7 @@ export const TransactionProvider = ({ children }) => {
   );
 
   // e = keyboard event... name is a property defined in the Input tag inside the Welcome component
-  const handleChange = (e, name) => {
+  const handleChange = (e:any, name:any) => {
     setFormData((prevState) => ({
       ...prevState,
       [name]: e.target.value,

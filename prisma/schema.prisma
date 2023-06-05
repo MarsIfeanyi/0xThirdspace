@@ -36,7 +36,8 @@ model Bounty{
   id Int @id @default(autoincrement())
   name String?
   desc String?
-  user_id String?
+  status String? @default("default")
+  // user_id String?
   bounty_space_id String?
   created_at DateTime? @default(now()) 
   updated_at DateTime? @default(now())
@@ -44,7 +45,7 @@ model Bounty{
   submission_end DateTime?
   reward String
   repo_link String?
-  bounty_creator_address String?
+  // bounty_creator_address String?
 
 }
 

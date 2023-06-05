@@ -13,24 +13,26 @@ const BountyOrganizationCard = (props: Props) => {
     setIsActive(!isActive);
   };
 
-  console.log({BountyOrganizationData},"BountyOrganizationData")
-
   return (
     <div className="bg-[#0A0A0A]">
       <div className="flex flex-row py-5 mx-6 font-nexa font-bold text-lg gap-8">
-        <Link href="/creator">
+        <Link href="/hunter">
           <h2 className={isActive ? "text-[#999999]" : ""}>
             Available Bounties
           </h2>
         </Link>
 
-        <Link href="/creator/bountyorg">
+        <Link href="/hunter/bountyorg">
           <h2
             className={isActive ? "" : "text-[#999999]"}
             onClick={toggleActiveLink}
           >
             Bounty Organization
           </h2>
+        </Link>
+
+        <Link href="/hunter/joined">
+          <h2 className="text-[#999999]">Joined Bounties</h2>
         </Link>
       </div>
 

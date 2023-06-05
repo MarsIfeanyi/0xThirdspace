@@ -16,6 +16,8 @@ import {
   Portal,
 } from "@chakra-ui/react";
 import Logo from "../Ui/Logo";
+import { logo } from "@/assets";
+import Image from "next/image";
 
 const iconItems = [
   {
@@ -68,7 +70,7 @@ const CreatorSidebar = ({ children }) => {
         </div>
 
         <div className="ml-4 mb-10">
-          <Logo />
+          <Image src={logo} alt="logo" width={180} />
         </div>
       </div>
 
