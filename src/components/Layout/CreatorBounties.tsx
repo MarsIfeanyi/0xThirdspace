@@ -7,6 +7,7 @@ import CreatorSidebar from "../Sidebar/Creator";
 const CreatorBounties = ({ children }: CreatorBountiesProps) => {
   return (
     <ChakraProvider>
+      
       <CreatorSidebar>{children}</CreatorSidebar>
     </ChakraProvider>
   );

@@ -13,6 +13,8 @@ const BountyOrganizationCard = (props: Props) => {
     setIsActive(!isActive);
   };
 
+  console.log({BountyOrganizationData},"BountyOrganizationData")
+
   return (
     <div className="bg-[#0A0A0A]">
       <div className="flex flex-row py-5 mx-6 font-nexa font-bold text-lg gap-8">

@@ -120,7 +120,7 @@ const CreateBountyForm = (props: Props) => {
               <label htmlFor="bounty_Name">Repo Link</label>
               <input
                 onChange={repoLinkChangeHandler}
-                defaultValue={repoLink}
+                defaultValue={repoLink}              
                 type="text"
                 name="repoLink"
                 id="repoLink"

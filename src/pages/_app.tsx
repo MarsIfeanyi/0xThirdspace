@@ -23,6 +23,7 @@ import { mainnet, polygon, optimism, arbitrum } from "wagmi/chains";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 import BountyPlatformContextProvider from "@/context/BountyPlatformContext";
+import Head from "next/head";
 const { chains, publicClient } = configureChains(
   [mainnet, polygon, optimism, arbitrum],
   [alchemyProvider({ apiKey: process.env.ALCHEMY_ID }), publicProvider()]
@@ -59,6 +60,9 @@ const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
       if (router.pathname.startsWith("/creator")) {
         return (
           <CreatorBounties>
+            <Head>
+              <title>ThridSpace - Next Gen Web3 Project Management Tool</title>
+            </Head>
             <div>{page}</div>
           </CreatorBounties>
         );
@@ -66,12 +70,18 @@ const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
       if (router.pathname.startsWith("/hunter")) {
         return (
           <BounterHunter>
+            <Head>
+              <title>ThridSpace - Next Gen Web3 Project Management Tool</title>
+            </Head>
             <div>{page}</div>
           </BounterHunter>
         );
       }
       return (
         <PublicLayout>
+          <Head>
+            <title>ThridSpace - Next Gen Web3 Project Management Tool</title>
+          </Head>
           <div>{page}</div>
         </PublicLayout>
       );
