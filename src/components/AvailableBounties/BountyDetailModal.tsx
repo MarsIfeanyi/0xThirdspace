@@ -1,5 +1,6 @@
 import { BountyDetails } from "@/constants";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 
@@ -107,10 +108,15 @@ const BountyDetailModal = ({ isVisible, onClose, selectedBounty }: Props) => {
               </p>
 
               <div className="mt-7">
-                <button className="font-nexa btnBackgroundGradient rounded-[8px] w-[220px] h-[50px] items-center justify-center flex flex-row gap-2">
+                <button></button>
+
+                <Link
+                  href="/hunter"
+                  className="font-nexa btnBackgroundGradient rounded-[8px] w-[220px] h-[50px] items-center justify-center flex flex-row gap-2"
+                >
                   <p className="">Join Bounty space</p>
                   <BsArrowUpRight className=" w-6 h-6 " />
-                </button>
+                </Link>
               </div>
             </div>
 

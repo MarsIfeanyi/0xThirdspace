@@ -41,7 +41,7 @@ const HunterSidebar = ({ children }) => {
         <Link href="/creator">
           <div className="flex item-center justify-evenly text-center text-xl  text-white p-3 rounded-lg">
             <Avatar src="" alt="chainliknk avatar" size="sm"></Avatar>
-            <p className="mx-2">Chainlink Boounty </p>
+            <p className="mx-2">Chainlink Bounty </p>
             {/* <DisplayAction /> */}
           </div>
         </Link>
