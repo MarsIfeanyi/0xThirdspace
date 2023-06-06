@@ -1,5 +1,6 @@
 import { BountyDetails } from "@/constants";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 
@@ -112,10 +113,13 @@ const BountyDetailModal = ({ isVisible, onClose, selectedBounty }: Props) => {
                   <BsArrowUpRight className=" w-6 h-6 " />
                 </button>
 
-                <button className="font-nexa btnBackgroundGradient rounded-[8px] w-[220px] h-[50px] items-center justify-center flex flex-row gap-2">
+                <Link
+                  href="/creator/view-submission"
+                  className="font-nexa btnBackgroundGradient rounded-[8px] w-[220px] h-[50px] items-center justify-center flex flex-row gap-2"
+                >
                   <p className="">View Submission</p>
                   <BsArrowUpRight className=" w-6 h-6 " />
-                </button>
+                </Link>
               </div>
             </div>
 

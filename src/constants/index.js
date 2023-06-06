@@ -319,3 +319,76 @@ export const hunterUserDetails = [
     iconCopy: <RiFileCopyLine />,
   },
 ];
+
+export const creatorViewSubmissionData = [
+  {
+    id: "1",
+    image: user01,
+    name: "Frank Williams",
+    socialHandle: "@Qubigs",
+    title: "Submission Description",
+    description:
+      "The aim of this project is to implement the missing functionality needed to control the Ethernet/TCP interface on the Raspberry Pi Pico W's on board CYW43...................",
+    seeMore: true,
+  },
+
+  {
+    id: "2",
+    image: user02,
+    name: "Frank Williams",
+    socialHandle: "@Qubigs",
+    title: "Submission Description",
+    description:
+      "The aim of this project is to implement the missing functionality needed to control the Ethernet/TCP interface on the Raspberry Pi Pico W's on board CYW43...................",
+    seeMore: true,
+  },
+
+  {
+    id: "3",
+    image: user03,
+    name: "Frank Williams",
+    socialHandle: "@Qubigs",
+    title: "Submission Description",
+    description:
+      "The aim of this project is to implement the missing functionality needed to control the Ethernet/TCP interface on the Raspberry Pi Pico W's on board CYW43...................",
+    seeMore: true,
+  },
+
+  {
+    id: "4",
+    image: user04,
+    name: "Frank Williams",
+    socialHandle: "@Qubigs",
+    title: "Submission Description",
+    description:
+      "The aim of this project is to implement the missing functionality needed to control the Ethernet/TCP interface on the Raspberry Pi Pico W's on board CYW43...................",
+    seeMore: true,
+  },
+
+  {
+    id: "5",
+    image: user05,
+    name: "Frank Williams",
+    socialHandle: "@Qubigs",
+    title: "Submission Description",
+    description:
+      "The aim of this project is to implement the missing functionality needed to control the Ethernet/TCP interface on the Raspberry Pi Pico W's on board CYW43...................",
+    seeMore: true,
+  },
+];
+
+export const creatorSubmissionData = [
+  {
+    id: "1",
+    image: user01,
+    name: "Frank Williams",
+    socialHandle: "@Qubigs",
+    walletAddress: "sj23h.....4h2s9",
+    repoLink: "Repo Link",
+    title: "Submission Description",
+    description:
+      "The development target is the RP2040 microcontroller using the Go programming language that comes in the Pico W board package. TinyGo is the compiler which lets us compile Go code to the RP2040. The CYW43439 is connected to the RP2040 (Raspberry Pi's microcontroller) via SPI where SDO and SDI are shared on the same pin. The communication today in TinyGo happens via software (bitbang) SPI.",
+    reject: true,
+    accept: true,
+  },
+];
