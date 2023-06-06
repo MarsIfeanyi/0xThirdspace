@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import BountyDetailModal from "./BountyDetailModal";
 
-import DummyImage from "../../assets/avb05.svg"
+import DummyImage from "../../assets/avb05.svg";
 
 type Props = {
   selectedBounty: Bounty | null;
@@ -31,7 +31,7 @@ const AvailableBountiesCard = (props: Props) => {
   };
 
   useEffect(() => {
-    const Fecth = async () => {
+    const Fetch = async () => {
       try {
         const res = await fetch(
           `${process.env.NEXT_PUBLIC_BASE_URL}/api/Bounty/getBounty`,
@@ -48,15 +48,15 @@ const AvailableBountiesCard = (props: Props) => {
         }
 
         const result = await res.json();
-        console.log({result },"result");
+        console.log({ result }, "result");
         setAvailableBounties(result);
-        console.log({availableBounties},'availableBounties');
+        console.log({ availableBounties }, "availableBounties");
       } catch (error) {
         console.log(error, "error fetch");
       }
     };
 
-    Fecth();
+    Fetch();
   }, []);
 
   return (
@@ -81,11 +81,11 @@ const AvailableBountiesCard = (props: Props) => {
             <div className="border-[#1F1F1F] border flex mt-4 mx-6 relative">
               <div className="flex flex-row gap-4 p-6 w-full">
                 <Image
-                src={bountiesData.image?"":DummyImage}
-                alt="bountyImage"
-                width={200}
-                className=""
-              />
+                  src={bountiesData.image ? "" : DummyImage}
+                  alt="bountyImage"
+                  width={200}
+                  className=""
+                />
 
                 <div className="flex flex-col mt-3 w-full">
                   <h2 className="font-nexa font-bold text-xl">
@@ -93,12 +93,12 @@ const AvailableBountiesCard = (props: Props) => {
                   </h2>
                   <div className="flex flex-row justify-between font-nexa text-sm my-2 mr-6">
                     <p>
-                      <span className="text-[#999999]">Start Date:{" "}</span>
-                      {(new Date(bountiesData.submission_start)).toDateString()}
+                      <span className="text-[#999999]">Start Date: </span>
+                      {new Date(bountiesData.submission_start).toDateString()}
                     </p>
                     <p>
-                      <span className="text-[#999999]">End Date:{" "}</span>
-                      {(new Date(bountiesData.submission_end)).toDateString()}
+                      <span className="text-[#999999]">End Date: </span>
+                      {new Date(bountiesData.submission_end).toDateString()}
                     </p>
                   </div>
 
